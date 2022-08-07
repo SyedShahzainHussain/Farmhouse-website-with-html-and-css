@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* LOGO */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    margin: 3px 6px;
+    height: 59px;
+}
+
+/* NAVIGATION */
+#navbor {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+
+}
+
+
+
+#navbor ul {
+    display: flex;
+}
+
+
+
+#navbor ul li {
+    list-style: none;
+}
+
+#navbor ul li a {
+    /* position: relative;  */
+    text-decoration: none;
+    padding: 3px 22px;
+    color: white;
+    display: block;
+    border-radius: 20px;
+}
+
+#navbor ul li a:hover {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(139, 145, 134);
+}
+
+/* button */
+
+button img {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 4px;
+    right: 30px;
+    cursor: pointer;
+
+}
+
+
+/* SECTION HOME */
+#home {
+    text-align: center;
+    position: relative;
+    height: 261px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.h-primary h2 {
+    font-family: 'Lora', serif;
+    padding: 20px;
+
+}
+
+.h-primary p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* SECTION SERVICE */
+
+#service {
+    display: flex;
+    text-align: center;
+
+}
+
+
+
+
+
+.h-primary {
+    text-align: center;
+    padding: 34px
+}
+
+.box-1 {
+    border: 2px solid black;
+    margin: 2px;
+}
+
+
+.box-2 {
+    border: 2px solid black;
+    margin: 2px;
+}
+
+.box-3 {
+    border: 2px solid black;
+    margin: 2px;
+}
+
+
+/* Client Section */
+
+
+#client-container {
+    position: relative;
+}
+
+
+
+#client {
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.h-secondary {
+    text-align: center;
+
+}
+
+.box {
+    justify-content: center;
+    display: flex;
+}
+
+.box img {
+    width: 90px;
+}
+
+/* Contact section */
+#contact {
+    position: relative;
+    text-align: center;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+
+
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+
+#contact-box label {
+    font-size: 1.2rem;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* css selector */
+#navbor::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
+}
+
+
+
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    top: 0px;
+    background: url("home.pg.avif") no-repeat center center/cover;
+    left: 0px;
+    z-index: -1;
+
+}
+
+#client-container::before {
+    content: "";
+    position: absolute;
+    height: 67%;
+    width: 100%;
+    background: url("client.pg.avif") no-repeat center center/cover;
+    opacity: 0.8;
+    margin-top: 30px;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 93%;
+    width: 100%;
+    background: url("contact.avif") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+    top: 28px;
+    left: 0px;
+
+}
